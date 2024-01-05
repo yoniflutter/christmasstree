@@ -9,6 +9,8 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 
 .stack {
@@ -143,4 +145,25 @@ body {
 /* canvas */
 canvas{
     position: absolute;
+}
+
+/* text */
+.text{
+    font-size: 34px;
+    color: rgb(51, 255, 0);
+    animation: gena 2s ease-in-out infinite alternate;
+    z-index: 10;
+    text-shadow: 1px 1px 1px black;
+}
+
+@keyframes gena {
+  0%{
+    position: absolute;
+    left: 20px;
+  }
+
+  100%{
+    position: absolute;
+    left: 200px;
+  }
 }
